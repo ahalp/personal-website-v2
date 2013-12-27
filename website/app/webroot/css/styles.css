@@ -1,0 +1,607 @@
+@charset "UTF-8";
+/* text selection */
+::-moz-selection {
+  background-color: black;
+  color: #ffffff;
+}
+
+::selection {
+  background-color: black;
+  color: #ffffff;
+}
+
+.fade-transition-color, a {
+  /* for hover transitions */
+  -webkit-transition: color 0.3s ease-out;
+  /* Safari 3.2+, Chrome */
+  -moz-transition: color 0.3s ease-out;
+  /* Firefox 4-15 */
+  -o-transition: color 0.3s ease-out;
+  /* Opera 10.5–12.00 */
+  transition: color 0.3s ease-out;
+  /* Firefox 16+, Opera 12.50+ */
+  -ms-transition: .3s;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}
+
+.fade-transition-all, .project-cell figure div img {
+  /* for hover transitions */
+  -webkit-transition: all 0.3s ease-out;
+  /* Safari 3.2+, Chrome */
+  -moz-transition: all 0.3s ease-out;
+  /* Firefox 4-15 */
+  -o-transition: all 0.3s ease-out;
+  /* Opera 10.5–12.00 */
+  transition: all 0.3s ease-out;
+  /* Firefox 16+, Opera 12.50+ */
+  -ms-transition: .3s;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}
+
+.default-font, .header-font, h2, h1, .journal .journal-content h1 a, .journal-cells .journal-cell h1 a, * {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.header-font, h2, h1, .journal .journal-content h1 a, .journal-cells .journal-cell h1 a {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.block-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif");
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.semi-bold {
+  font-weight: 500;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.spaces {
+  white-space: pre-wrap;
+}
+
+.hidden {
+  display: none;
+}
+
+.border-box, .project-cell figure div img, .image-cell-right-caption img, .image-cell-right-caption .caption, .image-cell-bottom-caption, .icbc-2-cells, .icbc-3-cells, #about, .journal .journal-image, .journal .journal-content {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+.gray-link, a {
+  color: gray;
+}
+
+.gray-link:hover, a:hover {
+  color: black;
+}
+
+.black-link, header nav a, .project-cell figure p a, .image-cell .caption a, .image-cell-right-caption .caption a, .image-cell-bottom-caption .caption a, .icbc-2-cells .caption a, .icbc-3-cells .caption a, .journal .journal-content h1 a, .journal-cells .journal-cell h1 a {
+  color: black;
+}
+
+.black-link:hover, header nav a:hover, .project-cell figure p a:hover, .image-cell .caption a:hover, .image-cell-right-caption .caption a:hover, .image-cell-bottom-caption .caption a:hover, .icbc-2-cells .caption a:hover, .icbc-3-cells .caption a:hover, .journal .journal-content h1 a:hover, .journal-cells .journal-cell h1 a:hover {
+  color: gray;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  clear: both;
+}
+
+* {
+  -webkit-text-size-adjust: none;
+  /* Prevent font scaling in landscape */
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 75px 75px 25px 75px;
+}
+@media screen and (max-width: 760px) {
+  header {
+    padding: 45px 45px 25px 45px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 430px) {
+  header {
+    padding: 25px 25px 25px 25px;
+  }
+}
+header h1 {
+  display: inline-block;
+  margin: 0;
+}
+@media screen and (max-width: 760px) {
+  header h1 {
+    width: 100%;
+  }
+}
+header h1 a {
+  color: black;
+  font-size: 24px;
+  font-weight: 500;
+}
+header nav {
+  display: inline-block;
+  text-align: right;
+  margin: 0;
+  float: right;
+  padding-top: 3px;
+}
+@media screen and (max-width: 760px) {
+  header nav {
+    float: none;
+  }
+}
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header nav li {
+  display: inline;
+  padding-left: 15px;
+}
+header nav li:first-child {
+  padding-left: 0;
+}
+header nav a {
+  font-size: 20px;
+  font-weight: 300;
+}
+@media screen and (max-width: 430px) {
+  header nav a {
+    font-size: 16px;
+  }
+}
+
+footer {
+  padding: 50px 0 35px 0;
+  clear: both;
+}
+
+hr {
+  clear: both;
+  margin-top: 1em;
+  color: #eeeeee;
+  background-color: #eeeeee;
+  height: 1px;
+  border: 0;
+}
+
+.links-footer {
+  padding-top: 1em;
+  text-align: center;
+}
+
+.project-cells {
+  overflow: hidden;
+  margin: 0 auto;
+  display: block;
+}
+
+.p-three-cols {
+  max-width: 100%;
+}
+@media screen and (max-width: 1050px) {
+  .p-three-cols {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .p-three-cols {
+    max-width: 400px;
+  }
+}
+
+.p-two-cols {
+  max-width: 800px;
+}
+@media screen and (max-width: 700px) {
+  .p-two-cols {
+    max-width: 400px;
+  }
+}
+
+.p-one-col {
+  max-width: 400px;
+}
+
+.pc-three-cols {
+  max-width: 33%;
+}
+@media screen and (max-width: 1050px) {
+  .pc-three-cols {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .pc-three-cols {
+    max-width: 100%;
+  }
+}
+
+.pc-two-cols {
+  max-width: 50%;
+}
+@media screen and (max-width: 1050px) {
+  .pc-two-cols {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .pc-two-cols {
+    max-width: 100%;
+  }
+}
+
+.pc-one-col {
+  max-width: 100%;
+}
+@media screen and (max-width: 1050px) {
+  .pc-one-col {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .pc-one-col {
+    max-width: 100%;
+  }
+}
+
+.project-cell {
+  float: left;
+}
+.project-cell figure {
+  padding: 20px 20px 10px 20px;
+  margin: 0;
+}
+@media screen and (max-width: 700px) {
+  .project-cell figure {
+    padding: 20px 10px 10px 10px;
+  }
+}
+.project-cell figure div {
+  position: relative;
+}
+.project-cell figure div img {
+  max-width: 100%;
+  margin-bottom: 0.3em;
+  border: 10px solid #f0f0f0;
+  width: 400px;
+}
+.project-cell figure div img:hover {
+  border: 10px solid #e0e0e0;
+}
+.project-cell figure p {
+  margin: 0;
+  text-align: left;
+  font-size: 18px;
+}
+
+.project {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+.project .overview {
+  max-width: 100%;
+}
+@media screen and (max-width: 760px) {
+  .project .overview {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .project .overview {
+    max-width: 100%;
+  }
+}
+.project .stats p {
+  margin: 0.3em 0;
+}
+.project .project-content {
+  clear: both;
+  margin-top: 25px;
+}
+.project .project-content h2 {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.image-cells {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-cell, .image-cell-right-caption, .image-cell-bottom-caption, .icbc-2-cells, .icbc-3-cells {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.image-cell figure, .image-cell-right-caption figure, .image-cell-bottom-caption figure, .icbc-2-cells figure, .icbc-3-cells figure {
+  overflow: hidden;
+  padding: 20px;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+@media screen and (max-width: 430px) {
+  .image-cell figure, .image-cell-right-caption figure, .image-cell-bottom-caption figure, .icbc-2-cells figure, .icbc-3-cells figure {
+    padding: 10px;
+  }
+}
+.image-cell img, .image-cell-right-caption img, .image-cell-bottom-caption img, .icbc-2-cells img, .icbc-3-cells img {
+  display: block;
+  max-width: 100%;
+}
+.image-cell .caption h1, .image-cell-right-caption .caption h1, .image-cell-bottom-caption .caption h1, .icbc-2-cells .caption h1, .icbc-3-cells .caption h1 {
+  margin: 0;
+  padding-bottom: 0.5em;
+}
+.image-cell .caption .image-title, .image-cell-right-caption .caption .image-title, .image-cell-bottom-caption .caption .image-title, .icbc-2-cells .caption .image-title, .icbc-3-cells .caption .image-title {
+  font-weight: 400;
+  color: black;
+}
+.image-cell .caption p, .image-cell-right-caption .caption p, .image-cell-bottom-caption .caption p, .icbc-2-cells .caption p, .icbc-3-cells .caption p {
+  margin: 0;
+}
+
+.image-cell-right-caption img {
+  max-width: 50%;
+  padding-bottom: 0;
+  float: left;
+}
+@media screen and (max-width: 760px) {
+  .image-cell-right-caption img {
+    float: none;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+}
+.image-cell-right-caption .caption {
+  float: left;
+  padding-left: 2em;
+  max-width: 50%;
+}
+@media screen and (max-width: 760px) {
+  .image-cell-right-caption .caption {
+    float: none;
+    padding-left: 0em;
+    max-width: 100%;
+  }
+}
+
+.image-cell-bottom-caption, .icbc-2-cells, .icbc-3-cells {
+  float: left;
+  max-width: 100%;
+}
+.image-cell-bottom-caption img, .icbc-2-cells img, .icbc-3-cells img {
+  max-width: 100%;
+  padding-right: 0;
+}
+.image-cell-bottom-caption .caption, .icbc-2-cells .caption, .icbc-3-cells .caption {
+  padding-top: 1em;
+}
+
+.icbc-2-cells {
+  padding: 10px;
+  max-width: 50%;
+}
+@media screen and (max-width: 760px) {
+  .icbc-2-cells {
+    max-width: 100%;
+  }
+}
+
+.icbc-3-cells {
+  padding: 10px;
+  max-width: 33%;
+}
+@media screen and (max-width: 900px) {
+  .icbc-3-cells {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .icbc-3-cells {
+    max-width: 100%;
+  }
+}
+.icbc-3-cells figure {
+  padding: 10px;
+}
+
+#about {
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+  /*padding: 10px;*/
+}
+#about #about-other p {
+  margin: 0;
+}
+#about #about-pp {
+  margin-top: 1em;
+}
+
+.journals {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+.journals h2 {
+  text-align: center;
+}
+.journals hr {
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 760px) {
+  .journals hr {
+    margin-top: 1em;
+  }
+}
+
+.journal {
+  overflow: hidden;
+  text-align: left;
+  padding-top: 1em;
+}
+.journal .journal-image {
+  overflow: hidden;
+  max-width: 50%;
+  float: left;
+  padding: 1em;
+  background-color: #f0f0f0;
+}
+@media screen and (max-width: 760px) {
+  .journal .journal-image {
+    max-width: 100%;
+    /*max-height: 100%;*/
+    float: none;
+  }
+}
+.journal .journal-image figure {
+  margin: 0;
+}
+.journal .journal-image img {
+  display: block;
+  max-width: 100%;
+  max-height: 500px;
+}
+@media screen and (max-width: 760px) {
+  .journal .journal-image img {
+    margin: 0 auto;
+  }
+}
+.journal .journal-content {
+  padding-top: 0;
+}
+.journal .journal-content h1 {
+  margin: 0.2em 0 0.2em 0;
+}
+.journal .journal-content h1 a {
+  font-size: 20px;
+}
+.journal .no-image {
+  max-width: 100%;
+}
+.journal .image {
+  max-width: 50%;
+  float: left;
+  padding-left: 2em;
+}
+@media screen and (max-width: 760px) {
+  .journal .image {
+    max-width: 100%;
+    padding-top: 1em;
+    padding-left: 0;
+    float: none;
+  }
+}
+
+.journal-cells .journal-cell {
+  margin: 1.4em auto 0 auto;
+  background-color: #f0f0f0;
+  text-align: left;
+  position: relative;
+  padding: 1.3em;
+  max-width: 70%;
+}
+@media screen and (max-width: 760px) {
+  .journal-cells .journal-cell {
+    max-width: 100%;
+  }
+}
+.journal-cells .journal-cell h1 {
+  margin: 0 0 0.1em 0;
+}
+.journal-cells .journal-cell .jc-time {
+  padding-bottom: 0.2em;
+}
+.journal-cells .journal-cell .jc-time time {
+  color: gray;
+}
+
+.link-list {
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: left;
+}
+@media screen and (max-width: 760px) {
+  .link-list {
+    text-align: center;
+  }
+}
+.link-list ul {
+  list-style-type: none;
+  padding: 1em 0 0 0;
+  margin: 0;
+}
+.link-list li {
+  list-style-type: none;
+}
+.link-list a {
+  font-size: 18tapx;
+}
+
+#container {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#content-container {
+  padding: 0 75px;
+}
+@media screen and (max-width: 760px) {
+  #content-container {
+    padding: 0 45px;
+  }
+}
+@media screen and (max-width: 430px) {
+  #content-container {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 430px) {
+  #content-container h1 {
+    font-size: 20px;
+  }
+}
