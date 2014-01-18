@@ -86,6 +86,11 @@ color: #ffffff;
   font-weight: $font-regular-weight;
 }
 
+.strike-through
+{
+  text-decoration:line-through;
+}
+
 .spaces {
   white-space: pre-wrap;
 }

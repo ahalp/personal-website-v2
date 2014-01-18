@@ -42,7 +42,6 @@
       <nav>
         <ul>
           <li> <?php echo $this->Html->link('Projects', array('controller' => 'projects', 'action' => 'index')); ?> </li>
-          <li> <?php echo $this->Html->link('Journal', array('controller' => 'journals', 'action' => 'index')); ?> </li>
           <li> <?php echo $this->Html->link('About', array('controller' => 'pages', 'action' => 'about')); ?> </li>
         </ul>
       </nav>

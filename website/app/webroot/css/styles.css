@@ -73,6 +73,10 @@
   font-weight: 400;
 }
 
+.strike-through {
+  text-decoration: line-through;
+}
+
 .spaces {
   white-space: pre-wrap;
 }
