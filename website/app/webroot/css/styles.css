@@ -410,11 +410,11 @@ hr {
 }
 
 .image-cell-bottom-caption, .icbc-2-cells, .icbc-3-cells {
-  float: left;
   max-width: 100%;
 }
 .image-cell-bottom-caption img, .icbc-2-cells img, .icbc-3-cells img {
   max-width: 100%;
+  margin: 0 auto;
   padding-right: 0;
 }
 .image-cell-bottom-caption .caption, .icbc-2-cells .caption, .icbc-3-cells .caption {
@@ -422,6 +422,7 @@ hr {
 }
 
 .icbc-2-cells {
+  float: left;
   padding: 10px;
   max-width: 50%;
 }
@@ -432,6 +433,7 @@ hr {
 }
 
 .icbc-3-cells {
+  float: left;
   padding: 10px;
   max-width: 33%;
 }

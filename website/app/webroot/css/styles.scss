@@ -478,11 +478,11 @@ $padding-image-cell: 10px;
   @extend .image-cell;
   @extend .border-box;
 
-  float: left;
   max-width: 100%;
 
   img {
     max-width: 100%;
+    margin: 0 auto;
     padding-right: 0;
   }
 
@@ -495,6 +495,7 @@ $padding-image-cell: 10px;
 {
   @extend .image-cell-bottom-caption;
 
+  float: left;
   padding: $padding-image-cell;
   max-width: 50%;
   @media screen and (max-width: $width-tablet) {
@@ -506,6 +507,7 @@ $padding-image-cell: 10px;
 {
   @extend .image-cell-bottom-caption;
 
+  float: left;
   padding: $padding-image-cell;
   max-width: 33%;
   @media screen and (max-width: 900px) {
